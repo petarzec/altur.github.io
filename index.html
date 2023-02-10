@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+    .main {
+    min-width: 768px;
+    font-family: Avenir, sans-serif;
+    text-transform: uppercase;
+    padding: 30px;
+  }
+
+  .logo {
+    text-align: center;
+    padding: 40px 0 40px 0;
+  }
+
+  .heading {
+    text-align: center;
+    margin: 0 200px 0 200px;
+    border-radius: 30px;
+    border: 5px dashed;
+    padding: 20px 0 20px 0;
+
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Adjust as needed */
+  }
+
+  /* Style the images */
+  .list img {
+    width: 100%;
+    /* Adjust as needed */
+    max-width: 100%;
+    /* Adjust as needed */
+    height: auto;
+    /* Adjust as needed */
+    float: left;
+    padding: 40px 0 40px 0;
+  }
+
+  .button {
+    margin: 20px 0 5px 0;
+    padding: 10px 40px 10px 40px;
+
+  }
+
+  #output {
+    letter-spacing: .1rem;
+    margin-top: 10px;
+  }
+
+
+  .button-54, #go-button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 10px 40px 10px 40px;
+    margin: 0px 0 10px 0;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-54:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
+  
+ #go-button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
+
+  </style>
+  <script>
+    $(document).ready(function() {
+  $("#copy-button").click(function() {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val("STAYSEXY").select();
+    document.execCommand("copy");
+    $temp.remove();
+    $("#copy-button").hide();
+    $("#output").html("<b>STAYSEXY</b>");
+    $('#output2').append($('<button>').text('Shop Now').attr('id', 'go-button'));
+    $("#output3").html("Copied!");
+    $('#go-button').click(function() {
+      window.open("https://www.altur.co", "_blank");
+    });
+  });
+});
+  </script>
+
+  <title>Altur.co</title>
+
+
+<body class="main">
+  <div class="logo"><img style: width="300px" src="https://cdn.shopify.com/s/files/1/1596/8601/files/altur_logo_43298d18-ea61-4114-a714-c7a12d334445.jpg"></div>
+  <br>
+  <div class="heading">
+    <h2>Save 25% off any Lingerie Set!</h2>
+    <h4>Click to reveal and copy discount code:</h4>
+    <div>
+      <h3 id="output">************</h3>
+      <button class="button-54" id="copy-button">Save 25%</button>
+      <div id="output3"></div><br>
+      <div id="output2"></div>
+    </div>
+
+  </div>
+  <br>
+
+  <div class="list">
+    <img src="https://cdn.shopify.com/s/files/1/1596/8601/products/H17ccf026e31644389bb8854ead539d2fn.jpg">
+    <img src="https://cdn.shopify.com/s/files/1/1596/8601/products/Hae5729c7077c464c9c3cdf4eda643627a.jpg">
+    <img src="https://cdn.shopify.com/s/files/1/1596/8601/products/H6a24b8c2fc964118a7d6023be5623ca5I.jpg">
+    <img src="https://cdn.shopify.com/s/files/1/1596/8601/products/H06c1753af5124f4da025388f6985b166f.jpg">
+    <img src="https://cdn.shopify.com/s/files/1/1596/8601/products/Saebd2a418dbf423884ae9fadb6fb294cj.jpg">
+    <img src="https://cdn.shopify.com/s/files/1/1596/8601/products/H63cb9db293394b5ebd09fa32c42b278bP.jpg">
+    <img src="https://cdn.shopify.com/s/files/1/1596/8601/products/H3e4ed63868bf4887880df23e8038c16c4.jpg">
+    <img src="https://cdn.shopify.com/s/files/1/1596/8601/products/Hf89c14478d8f45bda587cdbea9d53e00S.jpg">
+    <img src="https://cdn.shopify.com/s/files/1/1596/8601/products/Hd5c9e3e2bc784e6f89ff5e94cc1b7722f.jpg">
+    <img src="https://cdn.shopify.com/s/files/1/1596/8601/products/S382102c4f2f5435e8edeb955bbf2bd95i.jpg">
+    <img src="https://cdn.shopify.com/s/files/1/1596/8601/products/Hf89c14478d8f45bda587cdbea9d53e00S.jpg">
+    <img src="https://cdn.shopify.com/s/files/1/1596/8601/products/Sfefc75e4699443909d98ba2f08eeef66K.jpg">
+  </div>
+  <br>
+</body>
+
