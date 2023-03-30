@@ -85,7 +85,7 @@
   }
 
   </style>
-  <script>
+   <script>
     $(document).ready(function() {
   $("#copy-button").click(function() {
     var $temp = $("<input>");
@@ -95,9 +95,11 @@
     $temp.remove();
     $("#copy-button").hide();
     $("#output").html("<b>STAYSEXY</b>");
-    
+    $('#output2').append($('<button>').text('Shop Now').attr('id', 'go-button'));
     $("#output3").html("Copied!");
-
+    $('#go-button').click(function() {
+      window.open("https://bit.ly/3lxOkbk", "_self");
+    });
   });
 });
   </script>
@@ -116,6 +118,7 @@
       <h4 id="output">************</h4>
       <button class="button-54" id="copy-button">Save 25%</button>
       <div id="output3"></div><br>
+      <div id="output2"></div>
     </div>
 
   </div>
